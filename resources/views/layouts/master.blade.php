@@ -48,7 +48,7 @@
 
   <!-- script tambahan sweet alert, bukan dari bawaan sb-admin-2 -->
   @stack('additional_scripts')
-  <script src="{{ asset('/sbadmin2/js/swal.min.js') }}"></script>
+
 
 
 </body>
