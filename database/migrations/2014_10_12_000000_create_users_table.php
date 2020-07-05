@@ -20,6 +20,9 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->timestamps();
         });
+
+        $admin = ['name'=>'admin', 'email'=>'admin@lararticle.com', 'password'=>'123'];
+        $def_user = DB::table('users')->insert($admin);
     }
 
     /**

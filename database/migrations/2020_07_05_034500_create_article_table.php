@@ -20,8 +20,8 @@ class CreateArticleTable extends Migration
             $table->string('title');
             $table->string('content');
             $table->string('slug')->storedAs("lower(replace(title,' ','-'))");
-            $table->string('tag');
-            $table->unsignedBigInteger('user_id');
+            $table->string('tags')->nullable();
+            $table->unsignedBigInteger('user_id')->default(1);
             $table->foreign('user_id')->references('id')->on('users');;
         });
     }
