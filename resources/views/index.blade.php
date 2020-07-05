@@ -1,12 +1,12 @@
 @extends('layouts.master')
 
 @section('title')
-    <title>SB Admin 2 - Blank</title>
+    <title>Welcome</title>
 @endsection
 
 @section('content')
     <div class="container-fluid">
-        <!-- Page Heading -->        
-        <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+        <!-- Page Heading -->     
+        <img src="images/ERD.png" />
     </div>
 @endsection
